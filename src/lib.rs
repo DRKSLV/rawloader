@@ -65,7 +65,7 @@ use std::fmt;
 use std::io::Read;
 
 /// Error type for any reason for the decode to fail
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct RawLoaderError {
   msg: String,
 }
